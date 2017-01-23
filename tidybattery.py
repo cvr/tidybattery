@@ -104,7 +104,10 @@ if config:
         def update_icon(self):
             info = self.get_battery_info()
             icon = self.get_icon(info['state'],info['percentage'])
-            self.icon.set_from_icon_name(icon[icon['state']])
+            if os.path.isfile(icon[icon['state']]):
+                self.icon.set_from_file(icon[icon['state']])
+            else:
+                self.icon.set_from_icon_name(icon[icon['state']])
             self.icon.set_tooltip_text(info['tooltip'])
             return True
       
