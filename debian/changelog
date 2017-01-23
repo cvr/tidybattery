@@ -1,0 +1,12 @@
+tidybattery (20170123.e262bca-cvr+1) unstable; urgency=low
+
+  * Changes to allow for icons specified by image file paths, besides 
+    icon names from GTK themes.
+
+ -- Carlos Veiga Rodrigues <cvrodrigues@gmail.com>  Mon, 23 Jan 2017 14:47:40 +0000
+
+tidybattery (20150330.98cc287-cvr+1) unstable; urgency=low
+
+  * Build for Debian Jessie
+
+ -- Carlos Veiga Rodrigues <cvrodrigues@gmail.com>  Mon, 20 May 2015 18:43:45 +0100

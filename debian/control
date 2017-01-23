@@ -1,0 +1,20 @@
+Source: tidybattery
+Section: x11
+Priority: optional
+Maintainer: Carlos Veiga Rodrigues <cvrodrigues@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
+Homepage: https://github.com/decayofmind/tidybattery
+Vcs-Git: https://github.com/decayofmind/tidybattery.git
+
+Package: tidybattery
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, ${shlibs:Depends},
+ python (>= 2.6), acpi
+Description: Lightweight GTK tray battery monitor
+ Lightweight GTK tray battery monitor, fork of slimebattery rewritten in
+ Python. This project is a fork of that with additions of more levels of icon
+ notification and enabling of clicking on the icon to launch a custom command
+ (like the command for the system power manager).
+ .
+ Tidybattery uses acpi command to parse battery status and Python 2.6+.
